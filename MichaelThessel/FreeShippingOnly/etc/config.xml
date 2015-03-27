@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+  <global>
+    <modules>
+      <MichaelThessel_FreeShippingOnly>
+        <version>0.1.0</version>
+      </MichaelThessel_FreeShippingOnly>
+    </modules>
+    <blocks>
+      <checkout>
+        <rewrite>
+          <onepage_shipping_method_available>MichaelThessel_FreeShippingOnly_Block_Onepage_Shipping_Method_Available</onepage_shipping_method_available>
+        </rewrite>
+      </checkout>
+    </blocks>
+  </global>
+</config>
