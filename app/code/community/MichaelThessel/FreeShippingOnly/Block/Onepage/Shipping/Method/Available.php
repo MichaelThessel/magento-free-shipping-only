@@ -12,7 +12,7 @@ class MichaelThessel_FreeShippingOnly_Block_Onepage_Shipping_Method_Available ex
         $freeGroups = array();
         foreach ($groups as $index => $rates) {
             foreach ($rates as $rate) {
-                if (!$rate->getPrice() > 0) {
+                if (!((float) $rate->getPrice()) > 0) {
                     $freeGroups[$index][] = $rate;
                 }
             }
